@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Best Five Players</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
+                        bgCustom: '#151515',
                         clifford: '#da373d',
                     }
                 }
@@ -18,10 +20,105 @@
     </script>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline **text-clifford**">
-        Hello world!
-    </h1>
+<body class="bg-bgCustom">
+    <header class="bg-black flex justify-between mx-5">
+        <div class="w-2/12"><img class="pt-9" src="images/topleft.png" alt=""></div>
+        <div class="flex w-7/12">
+            <div class="text-center self-center">
+                <h1 class="text-4xl font-bold text-sky-300 p-3">Select Your Best Five</h1>
+                <p class="text-white">We've tried to balance current form with overall talent as best we can. We hope
+                    you
+                    make a list. We've
+                    been around the block enough times to know that there will be plenty of dissent from the gallery.
+                </p>
+            </div>
+        </div>
+        <div class="w-1/12 jystify-self-end self-end"><img src="images/top right.png" alt=""></div>
+    </header>
+    <main>
+        <section class="py-5 px-14">
+            <div class="grid grid-cols-4 gap-3">
+                <div class="text-center text-white pb-5 bg-black">
+                    <div class="pb-3 leading-7">
+                        <img class="pb-3" src="images/1.png" alt="">
+                        <h1 class="font-bold">Lionel Messi</h1>
+                        <p class="p-3 opacity-60">36 Goals . 120 Assist</p>
+                        <button class="bg-blue-600 px-12 py-0.5 font-medium">Select</button>
+                    </div>
+                </div>
+                <div class="text-center text-white pb-5 bg-black">
+                    <div class="pb-3 leading-7">
+                        <img class="pb-3" src="images/2.png" alt="">
+                        <h1 class="font-bold">Neymar Jr</h1>
+                        <p class="p-3 opacity-60">16 Goals . 100 Assist</p>
+                        <button class="bg-blue-600 px-12 py-0.5 font-medium">Select</button>
+                    </div>
+                </div>
+                <div class="text-center text-white pb-5 bg-black">
+                    <div class="pb-3 leading-7">
+                        <img class="pb-3" src="images/3.png" alt="">
+                        <h1 class="font-bold">Kylian Mbappe</h1>
+                        <p class="p-3 opacity-60">30 Goals . 110 Assist</p>
+                        <button class="bg-blue-600 px-12 py-0.5 font-medium">Select</button>
+                    </div>
+                </div>
+                <div class="text-center text-white pb-5 bg-black">
+                    <div class="pb-3 leading-7">
+                        <h1 class="font-bold py-3">Selected-V</h1>
+                        <hr class="w-9/12 ml-9">
+                        <ol>
+                        </ol>
+                    </div>
+                </div>
+                <div class="text-center text-white pb-5 bg-black">
+                    <div class="pb-3 leading-7">
+                        <img class="pb-3" src="images/4.png" alt="">
+                        <h1 class="font-bold">Vitor Machado</h1>
+                        <p class="p-3 opacity-60">3 Goals . 10 Assist</p>
+                        <button class="bg-blue-600 px-12 py-0.5 font-medium">Select</button>
+                    </div>
+                </div>
+                <div class="text-center text-white pb-5 bg-black">
+                    <div class="pb-3 leading-7">
+                        <img class="pb-3" src="images/5.png" alt="">
+                        <h1 class="font-bold">Sergio Ramos</h1>
+                        <p class="p-3 opacity-60">3 Goals . 12 Assist</p>
+                        <button class="bg-blue-600 px-12 py-0.5 font-medium">Select</button>
+                    </div>
+                </div>
+                <div class="text-center text-white pb-5 bg-black">
+                    <div class="pb-3 leading-7">
+                        <img class="pb-3 " src="images/6.png" alt="">
+                        <h1 class="font-bold">Renato Sanches</h1>
+                        <p class="p-3 opacity-60">6 Goals . 10 Assist</p>
+                        <button class="bg-blue-600 px-12 py-0.5 font-medium">Select</button>
+                    </div>
+                </div>
+                <div class="text-center text-white pb-5 bg-black">
+                    <div class="pb-3 leading-7">
+                        <h1 class="font-bold py-3">Budget</h1>
+                        <hr class="w-9/12 ml-9 ">
+                        <div class="flex py-3">
+                            <p class="p-3 opacity-60">Per Player</p>
+                            <input class="block w-7/12 bg-bgCustom" type="text" name="" id="">
+                        </div>
+                        <button class="bg-blue-600 px-12 py-0.5 w-10/12 font-medium">Calculate</button>
+                        <p id="" class="p-3 opacity-60 w-10/12">Player Expeases $ <span> 1000</span></p>
+                        <div class="flex py-3">
+                            <p class="p-3 opacity-60">Manager</p>
+                            <input class="block w-7/12 bg-bgCustom" type="text" name="" id="">
+                        </div>
+                        <div class="flex py-3">
+                            <p class="p-3 opacity-60">Coach</p>
+                            <input class="block w-7/12 bg-bgCustom ml-5" type="text" name="" id="">
+                        </div>
+                        <button class="bg-blue-600 px-12 py-0.5 w-10/12 font-medium">Calculate Total</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
