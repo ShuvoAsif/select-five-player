@@ -37,11 +37,11 @@
     </header>
     <main>
         <section class="py-5 px-14">
-            <div class="grid grid-cols-4 gap-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
                 <!---------------------players start--------------------->
-                <div class="grid col-span-3 grid-cols-3 gap-3">
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:col-span-3 lg:grid-cols-3 gap-3">
                     <!--------------------player1-------------------->
-                    <div class="text-center text-white pb-5 bg-black">
+                    <div class="text-center text-white pb-5 bg-black border border-gray-500">
                         <div class="pb-3 leading-7">
                             <img class="pb-3" src="images/1_edited.jpg" alt="">
                             <h1 class="font-bold">Lionel Messi</h1>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <!--------------------player2-------------------->
-                    <div class="text-center text-white pb-5 bg-black">
+                    <div class="text-center text-white pb-5 bg-black border border-gray-500">
                         <div class="pb-3 leading-7">
                             <img class="pb-3" src="images/2_edited.jpg" alt="">
                             <h1 class="font-bold">Neymar Jr</h1>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <!--------------------player3-------------------->
-                    <div class="text-center text-white pb-5 bg-black">
+                    <div class="text-center text-white pb-5 bg-black border border-gray-500">
                         <div class="pb-3 leading-7">
                             <img class="pb-3" src="images/3_edited.jpg" alt="">
                             <h1 class="font-bold">Kylian Mbappe</h1>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                     <!--------------------player4-------------------->
-                    <div class="text-center text-white pb-5 bg-black">
+                    <div class="text-center text-white pb-5 bg-black border border-gray-500">
                         <div class="pb-3 leading-7">
                             <img class="pb-3" src="images/4_edited.jpg" alt="">
                             <h1 class="font-bold">Vitor Machado</h1>
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <!--------------------player5-------------------->
-                    <div class="text-center text-white pb-5 bg-black">
+                    <div class="text-center text-white pb-5 bg-black border border-gray-500">
                         <div class="pb-3 leading-7">
                             <img class="pb-3" src="images/5_edited.jpg" alt="">
                             <h1 class="font-bold">Sergio Ramos</h1>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <!--------------------player6-------------------->
-                    <div class="text-center text-white pb-5 bg-black">
+                    <div class="text-center text-white pb-5 bg-black border border-gray-500">
                         <div class="pb-3 leading-7">
                             <img class="pb-3 " src="images/6_edited.jpg" alt="">
                             <h1 class="font-bold">Renato Sanches</h1>
@@ -102,7 +102,9 @@
                     </div>
                 </div>
                 <!---------------------players end--------------------->
+                <!----------------list and budget start---------------->
                 <div class="grid grid-cols-1 gap-3">
+                    <!---------------------list--------------------->
                     <div class="text-center text-white pb-5 bg-black">
                         <div class="pb-3 leading-7">
                             <h1 class="font-bold py-3">Selected-V</h1>
@@ -111,6 +113,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!--------------------budget------------------->
                     <div class="text-center text-white pb-5 bg-black">
                         <div class="pb-3 leading-7">
                             <h1 class="font-bold py-3">Budget</h1>
@@ -127,20 +130,22 @@
                             </div>
                             <div class="flex py-3">
                                 <p class="p-3 opacity-60">Manager</p>
-                                <input class="block w-7/12 bg-bgCustom" type="text" name="" id="">
+                                <input class="block w-7/12 bg-bgCustom" type="text" name="" id="managerCost">
                             </div>
                             <div class="flex py-3">
                                 <p class="p-3 opacity-60">Coach</p>
-                                <input class="block w-7/12 bg-bgCustom ml-5" type="text" name="" id="">
+                                <input class="block w-7/12 bg-bgCustom ml-5" type="text" name="" id="coachCost">
                             </div>
-                            <button class="bg-blue-600 px-12 py-0.5 w-10/12 font-medium">Calculate Total</button>
+                            <button id="btn-totalCalculation"
+                                class="bg-blue-600 px-12 py-0.5 w-10/12 font-medium">Calculate Total</button>
                             <div class="flex jystify-between">
                                 <p id="" class="p-3 opacity-60 w-10/12">Total</p>
-                                <p id="" class="p-3 w-10/12 text-orange-500">$<span>00</span></p>
+                                <p id="" class="p-3 w-10/12 text-orange-500">$<span id="total">00</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-----------------list and budget end----------------->
             </div>
         </section>
     </main>
