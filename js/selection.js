@@ -10,9 +10,10 @@ function addToList(element) {
     const li = document.createElement('li');
     li.innerText = playerName;
 
-    const playerString = listContainer.children.length;
 
     //---------------appendChild and setAllart---------------
+    const playerString = listContainer.children.length;
+
     if (playerString < 5) {
         listContainer.appendChild(li);
     }
