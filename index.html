@@ -117,10 +117,14 @@
                             <hr class="w-9/12 ml-9 ">
                             <div class="flex py-3">
                                 <p class="p-3 opacity-60">Per Player</p>
-                                <input class="block w-7/12 bg-bgCustom" type="text" name="" id="">
+                                <input class="block w-7/12 bg-bgCustom" type="text" name="" id="perPlayerCost">
                             </div>
-                            <button class="bg-blue-600 px-12 py-0.5 w-10/12 font-medium">Calculate</button>
-                            <p id="" class="p-3 opacity-60 w-10/12">Player Expeases $ <span> 1000</span></p>
+                            <button id="btn-calculation"
+                                class="bg-blue-600 px-12 py-0.5 w-10/12 font-medium">Calculate</button>
+                            <div class="flex jystify-between">
+                                <p id="" class="p-3 opacity-60 w-10/12">Player Expeases</p>
+                                <p id="" class="p-3 w-10/12 text-white">$<span id="totalExpenses">00</span></p>
+                            </div>
                             <div class="flex py-3">
                                 <p class="p-3 opacity-60">Manager</p>
                                 <input class="block w-7/12 bg-bgCustom" type="text" name="" id="">
@@ -131,8 +135,8 @@
                             </div>
                             <button class="bg-blue-600 px-12 py-0.5 w-10/12 font-medium">Calculate Total</button>
                             <div class="flex jystify-between">
-                                <p id="" class="p-3 opacity-60 w-10/12">Player Expeases</p>
-                                <p id="" class="p-3 opacity-60 w-10/12 text-orange-500">$<span>1000</span></p>
+                                <p id="" class="p-3 opacity-60 w-10/12">Total</p>
+                                <p id="" class="p-3 w-10/12 text-orange-500">$<span>00</span></p>
                             </div>
                         </div>
                     </div>
@@ -140,7 +144,9 @@
             </div>
         </section>
     </main>
+    <script src="js/utilities.js"></script>
     <script src="js/selection.js"></script>
+    <script src="js/calculation.js"></script>
 </body>
 
 </html>
