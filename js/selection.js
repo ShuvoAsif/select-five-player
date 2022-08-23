@@ -23,15 +23,9 @@ function addToList(element) {
     }
 
     //---------------------button disable--------------------
-    const name = listContainer.children[parseInt(playerString)].innerText;
     const deleteButton = element.parentNode.children[3];
 
-    if (name === playerName) {
-        deleteButton.setAttribute('disabled', true);
-        deleteButton.classList.add('bg-slate-500')
-    }
-    else {
-        deleteButton.removeAttribute('disabled');
-    }
+    deleteButton.setAttribute('disabled', true);
+    deleteButton.classList.add('bg-slate-500')
 
 }
